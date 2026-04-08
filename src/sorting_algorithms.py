@@ -37,3 +37,15 @@ class Algorithms:
 
             if min_index != i:
                 self.values.swap(i, min_index)
+
+    def insertion_sort_ascending(self) -> None:
+        list_size: int = self.values.size()
+        for i in range(1, list_size - 1):
+            value_to_insert = list[i]
+            scan_index = i - 1
+
+            while scan_index >= 0 and lst[scan_index] > value_to_insert:
+                self.list[scan_index + 1] = self.list[scan_index]
+                scan_index -= 1
+
+            self.list[scan_index + 1] = value_to_insert
