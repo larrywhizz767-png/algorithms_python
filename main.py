@@ -15,6 +15,8 @@ def run_sorting(algorithm_name: str, raw_values: list[int], expected: list[int])
         algorithms.bubbleSortAscending()
     elif algorithm_name == "selection_sort_ascending":
         algorithms.selectionSortAscending()
+    elif algorithm_name == "insertion_sort_ascending":
+        algorithms.insertionSortAscending()
     else:
         raise ValueError(f"Unknown algorithm: {algorithm_name}")
 
@@ -34,6 +36,7 @@ def main() -> None:
 
     run_sorting("bubble_sort_ascending", values, expected)
     run_sorting("selection_sort_ascending", values, expected)
+    run_sorting("insertion_sort_ascending", values, expected)
 
 
 if __name__ == "__main__":
