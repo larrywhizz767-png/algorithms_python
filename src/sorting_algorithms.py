@@ -40,12 +40,12 @@ class Algorithms:
 
     def insertion_sort_ascending(self) -> None:
         list_size: int = self.values.size()
-        for i in range(1, list_size - 1):
-            value_to_insert = list[i]
+        for i in range(1, list_size + 1):
+            value_to_insert = self.values
             scan_index = i - 1
 
-            while scan_index >= 0 and lst[scan_index] > value_to_insert:
-                self.list[scan_index + 1] = self.list[scan_index]
+            while scan_index >= 0 and self.values[scan_index] > value_to_insert:
+                self.values[scan_index + 1] = self.values[scan_index]
                 scan_index -= 1
 
             self.list[scan_index + 1] = value_to_insert
