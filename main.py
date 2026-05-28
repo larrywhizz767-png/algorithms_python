@@ -12,7 +12,6 @@ def run_sorting(method_name: str, raw_values: list[int], expected: list[int]) ->
     print(f"Before: {algorithms.values}")
 
     try:
-        # 🔥 Dynamically call the method
         getattr(algorithms, method_name)()
     except AttributeError:
         raise ValueError(f"Unknown algorithm: {method_name}")
