@@ -16,10 +16,12 @@ step by step.
 
 ## <a id="implemented-algorithms"></a><img src="assets/readme/icons/lucide/circle-check-big.svg" width="28" alt="" /> Implemented Algorithms
 
-| Algorithm      | Function                 | Idea                                                           |
-|----------------|--------------------------|----------------------------------------------------------------|
-| Bubble Sort    | `bubbleSortAscending`    | Repeatedly swaps adjacent values until the list is ordered.    |
-| Selection Sort | `selectionSortAscending` | Selects the smallest remaining value and places it next.       |
+| Algorithm      | Functions                                           | Idea                                                           |
+|----------------|-----------------------------------------------------|----------------------------------------------------------------|
+| Bubble Sort    | `bubbleSortAscending`, `bubbleSortDescending`       | Repeatedly swaps adjacent values until the list is ordered.    |
+| Selection Sort | `selectionSortAscending`, `selectionSortDescending` | Selects the smallest remaining value and places it next.       |
+| Inserton Sort  | `insertionSortAscending`, `insertionSortDescending` | 
+| 
 
 ## <a id="installation"></a><img src="assets/readme/icons/lucide/terminal.svg" width="28" alt="" /> Installation
 

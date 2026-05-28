@@ -22,6 +22,9 @@ class Algorithms:
                     self.values.swap(i, i + 1)
                     didSwap = True
 
+    #Best case: O(n)
+    #Worst case: O(n^2)
+
     def selectionSortAscending(self) -> None:
         list_size: int = self.values.size()
 
@@ -38,6 +41,9 @@ class Algorithms:
             if min_index != i:
                 self.values.swap(i, min_index)
 
+    #Best case: O(n^2)
+    #Worst case: O(n^2)
+
     def insertionSortAscending(self) -> None:
         list_size: int = self.values.size()
         for i in range(1, list_size):
@@ -49,6 +55,9 @@ class Algorithms:
                 scan_index -= 1
 
             self.values.set(scan_index+1, value_to_insert)
+
+    #Best case: O(n)
+    #Worst case: not too sure
     
     def cocktailSortAscending(self) -> None:
         list_size = self.values.size()
@@ -73,6 +82,9 @@ class Algorithms:
                 if self.values.get(i) > self.values.get(i + 1):
                     self.values.swap(i, i + 1)
                     didSwap = True
+
+    #Best case: O(n)
+    #Worst case: O(n^2)
             
 
     def bubbleSortDescending(self) -> None:
